@@ -21,7 +21,8 @@ button{
     width: 150px;
     height: 50px;
     background-color: #FFF974;
-    color: #FC961F;
+    border-color: rgb(234, 179, 106);
+    color: #ff8901;
     align-items: center;
     justify-content: center;
 }
@@ -33,8 +34,7 @@ button{
 
 .logo{
     width: 30%;
-    padding: 1%;
-    
+    padding: 1%; 
 }
 
 .heroContent {
@@ -71,7 +71,6 @@ button{
 .content .profilePic{
     display: inline-block;
     align-items: center;
-
 }
 .profilePic {
     width: 200px;
@@ -82,6 +81,41 @@ button{
     flex-direction: column;
     align-items: center;
 }
+div.aboutMe.moreAboutMe {
+    display: block;
+}
+.aboutMe {
+    font-size: 25px;
+    font-family: 'Abhaya Libre', serif;
+    color: brown;
+    background-color: #e3a96684;
+    display: block;
+    justify-content: center;
+    margin-left: 150px;
+    padding: 25px;
+}
+
+.moreAboutMe {
+    font-size: 20px;
+    font-family: 'Abhaya Libre', serif;
+    color: brown;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;   
+}
+
+div.mySkills {
+    font-size: 20px;
+    font-family: 'Abhaya Libre', serif;
+    color: brown;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 175px;   
+}
+
+
 
 footer{
     background-color: #E3A966;
@@ -97,7 +131,7 @@ footer{
 }
 
 footer ul {
-    display: block;
+    display: inline-block;
     align-items: center;
     flex: wrap;
     width: 100%; 
