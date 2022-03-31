@@ -6,7 +6,6 @@ div.sidebar {
     margin: 0;
     padding: 0;
     width: 150px;
-    background-color: #FC961F;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -91,8 +90,7 @@ div.aboutMe.moreAboutMe {
     background-color: #e3a96684;
     display: block;
     justify-content: center;
-    margin-left: 150px;
-    padding: 25px;
+    padding: 50px;
 }
 
 .moreAboutMe {
@@ -112,15 +110,55 @@ div.mySkills {
     display: inline-block;
     align-items: center;
     justify-content: space-between;
-    margin-left: 175px;   
+    
 }
 
+.flexContainer {
+    margin: 0 auto;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    
+}
 
+.userEmpathy{
+    
+    margin-left: 20px;
+    margin-right: 25px;
+    height: 400px;
+    width: 50%;
+    border-top: 5px solid brown;
+    display: grid;
+    
+}
+
+.interview{
+    
+    margin-left: 20px;
+    margin-right: 25px;
+    height: 400px;
+    width: 50%;
+    border-top: 5px solid brown;
+    display: grid;
+    justify-content: stretch;
+}
+
+.userResearch{
+    
+    margin-left: 20px;
+    margin-right: 25px;
+    height: 400px;
+    width: 50%;
+    border-top: 5px solid brown;
+    display: grid;
+}
 
 footer{
     background-color: #E3A966;
     padding: 5px;
     display: flex;
+    align-items: center;
     justify-content: center;
 } 
 
