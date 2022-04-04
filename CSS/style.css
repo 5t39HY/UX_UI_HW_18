@@ -64,9 +64,8 @@ button{
     margin-right: 100px; 
     display: float;
     flex-wrap: wrap; 
-    
-
 }
+
 .content .profilePic{
     display: inline-block;
     align-items: center;
@@ -80,9 +79,11 @@ button{
     flex-direction: column;
     align-items: center;
 }
+
 div.aboutMe.moreAboutMe {
     display: block;
 }
+
 .aboutMe {
     font-size: 25px;
     font-family: 'Abhaya Libre', serif;
@@ -115,19 +116,23 @@ div.mySkills {
 
 .flexContainer {
     margin: 0 auto;
-    display: inline-block;
+    display: flex;
+    flex-direction:row;
     align-items: center;
     justify-content: space-evenly;
     padding: 15px;
     
 }
+h1 h2 h3 h4 {
+    padding: 15px;
 
+}
 .userEmpathy{
     
-    margin-left: 20px;
+    margin-left: 25px;
     margin-right: 25px;
     height: 400px;
-    width: 50%;
+    width: 33%;
     border-top: 5px solid brown;
     display: grid;
     
@@ -135,10 +140,10 @@ div.mySkills {
 
 .interview{
     
-    margin-left: 20px;
+    margin-left: 25px;
     margin-right: 25px;
     height: 400px;
-    width: 50%;
+    width: 33%;
     border-top: 5px solid brown;
     display: grid;
     justify-content: stretch;
@@ -146,12 +151,41 @@ div.mySkills {
 
 .userResearch{
     
-    margin-left: 20px;
+    margin-left: 25px;
     margin-right: 25px;
     height: 400px;
-    width: 50%;
+    width: 33%;
     border-top: 5px solid brown;
     display: grid;
+}
+
+.mySkills .tools {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    word-spacing: 15px;
+    padding: 15px;
+    background-color:#FFF974;
+}
+
+.workGrid {
+    display: grid;
+    grid-area: "workGrid";
+    margin: 0 auto;
+
+
+}
+
+.myWork {
+    font-size: 20px;
+    font-family: 'Abhaya Libre', serif;
+    color: brown;
+    border-top: 5px solid brown;
+    display: grid;
+    grid-template-areas: "workGrid workGrid workGrid";
+    align-items: center;
+    justify-content: center;
+
 }
 
 footer{
