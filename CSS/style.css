@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
-
 div.sidebar {
     margin: 0;
     padding: 0;
@@ -28,18 +26,19 @@ button{
     justify-content: center;
 }
 
+
 .inline-block{
     display: inline-block;
     vertical-align: top;
 }
 
 .logo{
+    position: relative;
     width: 30%;
     padding: 1%; 
 }
 
 .heroContent {
-    
     display: flex;
     justify-content: center;
     margin-left: 100px;
@@ -95,7 +94,6 @@ div.aboutMe.moreAboutMe {
     display: block;
     align-items: left;
     justify-content: left;
-    
 }
 
 .aboutMe p {
@@ -109,7 +107,6 @@ div.mySkills {
     display: inline-block;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 .flexContainer {
@@ -119,7 +116,11 @@ div.mySkills {
     align-items: center;
     justify-content: space-evenly;
     padding: 15px;
-    
+}
+
+.myWork { 
+    display: grid;
+    grid-template-columns: 33.3%, 33.3%, 33.3%;
 }
 
 .userEmpathy{ 
@@ -130,12 +131,11 @@ div.mySkills {
     border: 5px solid brown;
     background-color: #e3a96684;
     padding: 15px;
-    display: grid;
-    
+    box-shadow: 0 5px 20px 10px rgba(0, 0, 0, .2);
+    overflow: hidden;
 }
 
 .interview{
-    
     margin-left: 25px;
     margin-right: 25px;
     height: 100%;
@@ -143,8 +143,8 @@ div.mySkills {
     border: 5px solid brown;
     background-color: #e3a96684;
     padding: 15px;
-    display: grid;
-    justify-content: stretch;
+    box-shadow: 0 5px 20px 10px rgba(0, 0, 0, .2);
+    overflow: hidden;
 }
 
 .userResearch{
@@ -155,7 +155,8 @@ div.mySkills {
     border: 5px solid brown;
     background-color: #e3a96684;
     padding: 15px;
-    display: grid;
+    box-shadow: 0 5px 20px 10px rgba(0, 0, 0, .2);
+    overflow: hidden;
 }
 
 .mySkills .tools {
@@ -168,11 +169,11 @@ div.mySkills {
     justify-content: center;
     word-spacing: 15px;
     padding: 15px;
-    
 }
+
 h1 {
     padding: 25px;
-    margin: 0 auto;
+    margin-left: 10px;
 }
 p{
     padding-top: 10px;
@@ -186,6 +187,11 @@ p{
     margin-bottom: 10px;
     margin-top: 10px;
 }
+.helpHandsContent img h4 p{
+    position: relative;
+    text-align: center;
+    color: white;
+}
 
 .deptOfEdContent{
     padding: 0;
@@ -193,7 +199,11 @@ p{
     margin-bottom: 10px;
     margin-top: 10px;
 }
-
+.deptOfEdContent{
+    position: relative;
+    text-align: center;
+    color: white;
+}
 .portlandUrbanContent{
     padding: 0;
     margin: 0;
@@ -210,6 +220,7 @@ p{
 .myWork {
     font-size: 20px;
     font-family: 'Abhaya Libre', serif;
+    text: wrap;
     color: brown;
     border-top: 5px solid brown;
     display: grid;
@@ -235,10 +246,19 @@ footer ul {
     width: 100%; 
     padding: 15px;
 }
+footer ul:hover {
+    color: brown;
+}
+button:hover {
+    background-color: #ff8901;
+    color: white;
+}
 
-@media only screen and (max-width: 600) {
+
+@media only screen and (max-width: 1024px) {
     .flexContainer {
         display: column;
+        background-color: red;
     }
    
   }
