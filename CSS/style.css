@@ -187,11 +187,6 @@ p{
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.helpHandsContent img h4 p{
-    position: relative;
-    text-align: center;
-    color: white;
-}
 
 .deptOfEdContent{
     padding: 0;
@@ -220,7 +215,6 @@ p{
 .myWork {
     font-size: 20px;
     font-family: 'Abhaya Libre', serif;
-    text: wrap;
     color: brown;
     border-top: 5px solid brown;
     display: grid;
