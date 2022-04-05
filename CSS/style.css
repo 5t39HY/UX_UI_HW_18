@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
 }
+
+
 div.sidebar {
     margin: 0;
     padding: 0;
@@ -89,19 +91,15 @@ div.aboutMe.moreAboutMe {
     font-family: 'Abhaya Libre', serif;
     color: brown;
     background-color: #e3a96684;
+    padding: 30px;
     display: block;
-    justify-content: center;
-    padding: 50px;
+    align-items: left;
+    justify-content: left;
+    
 }
 
-.moreAboutMe {
-    font-size: 20px;
-    font-family: 'Abhaya Libre', serif;
-    color: brown;
-    display: block;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 50px;   
+.aboutMe p {
+    padding-left: 25px;
 }
 
 div.mySkills {
@@ -124,13 +122,14 @@ div.mySkills {
     
 }
 
-.userEmpathy{
-    
+.userEmpathy{ 
     margin-left: 25px;
     margin-right: 25px;
-    height: 400px;
+    height: 100%;
     width: 33%;
-    border-top: 5px solid brown;
+    border: 5px solid brown;
+    background-color: #e3a96684;
+    padding: 15px;
     display: grid;
     
 }
@@ -139,38 +138,73 @@ div.mySkills {
     
     margin-left: 25px;
     margin-right: 25px;
-    height: 400px;
+    height: 100%;
     width: 33%;
-    border-top: 5px solid brown;
+    border: 5px solid brown;
+    background-color: #e3a96684;
+    padding: 15px;
     display: grid;
     justify-content: stretch;
 }
 
 .userResearch{
-    
     margin-left: 25px;
     margin-right: 25px;
-    height: 400px;
+    height: 100%;
     width: 33%;
-    border-top: 5px solid brown;
+    border: 5px solid brown;
+    background-color: #e3a96684;
+    padding: 15px;
     display: grid;
 }
 
 .mySkills .tools {
     display: inline-block;
     align-items: center;
+    width: 100%;
+    height: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
     justify-content: center;
     word-spacing: 15px;
     padding: 15px;
-    background-color:#FFF974;
+    
+}
+h1 {
+    padding: 25px;
+    margin: 0 auto;
+}
+p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
 }
 
+.helpHandsContent{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.deptOfEdContent{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.portlandUrbanContent{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 .workGrid {
     display: grid;
     grid-area: "workGrid";
     margin: 0 auto;
-
-
+    padding: 30px;
 }
 
 .myWork {
@@ -179,7 +213,8 @@ div.mySkills {
     color: brown;
     border-top: 5px solid brown;
     display: grid;
-    grid-template-areas: "workGrid workGrid workGrid";
+    grid-template-areas: 
+    "workGrid workGrid workGrid";
     align-items: center;
     justify-content: center;
 
@@ -193,12 +228,6 @@ footer{
     justify-content: center;
 } 
 
-.footerMenu {
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-}
-
 footer ul {
     display: inline-block;
     align-items: center;
@@ -207,7 +236,11 @@ footer ul {
     padding: 15px;
 }
 
-
-
+@media only screen and (max-width: 600) {
+    .flexContainer {
+        display: column;
+    }
+   
+  }
 
 
